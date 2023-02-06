@@ -15,12 +15,16 @@
 
 img{
     display: block;
+    width:  100%;
 }
 
 
 
 /* common */
 
+*{
+    font-family: 'Roboto', sans-serif;
+}
 
 .inline-list{
     display: flex;
@@ -67,6 +71,7 @@ section,footer{
 /* header  */
 header{
     background-color: var(--first-color);
+    padding: .625rem 1.875rem;
 }
 
 header .menu{
@@ -92,8 +97,41 @@ header .menu{
 
 
 
+/* application */
+#application .col{
+    padding: 1.25rem;
+}
+
+#application .col:first-child{
+    padding-bottom:0;
+}
+
+#application .card{
+    text-align: center;
+}
+
+#application .card i{
+    font-size: 60px;
+    color: var(--first-color);
+}
+
+#application h3{
+    font-size: 24px;
+    color: var(--first-color);
+    margin: 20px 0;
+}
+
+#application div p{
+    color: #5a6e7f;
+    font-weight: bold;
+    line-height: 1.875rem;
+}
 
 
+#application .img{
+    display: flex;
+    justify-content: flex-end;
+}
 /* debug sezione application */
 .debug .col{
     height: 18.75rem;
@@ -124,7 +162,16 @@ header .menu{
 }
 #planning .img{
     width: 100%;
+    padding: 2.5rem;
 
+}
+#planning .col img{
+    width: 100%;
+    scale: 0.8;
+}
+#planning .col{
+    padding: 1.25rem 1.875rem;
+    text-align: center;
 }
 
 
@@ -134,6 +181,23 @@ header .menu{
     background-color: var(--secondary-color);
 }
 
+#testimonials img{
+    border-radius: 50%;
+    margin-bottom: 1.875rem;
+    max-width:200px ;
+    max-height: 200px;
+}
+
+#testimonials .col{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1.25rem;
+}
+
+
+#testimonials .author{
+    padding-top: 1.25rem;
+}
 /* benefits */
 #benefits{
     background-color: var(--secondary-color);
@@ -194,10 +258,11 @@ footer p{
 
     /* sezione application */
     #application .col{
-        width: calc( 100% / 3 - 1.875rem);
+        width: calc( 100% / 3 - 1.875rem );
     }
     #application .col:first-child{
         width: calc(2*(100% / 3) - 1.875rem);
+        display: flex;
     }
 
     /* sezione planning */
@@ -208,6 +273,9 @@ footer p{
     }
     #planning .flex-item{
         width: calc(50% - 1.875rem);
+    }
+    #testimonials .col{
+
     }
     /* sezione benefits */
     #benefits .col{

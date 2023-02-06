@@ -42,11 +42,14 @@
     gap: 1.875rem;
 }
 
-section{
+section,footer{
     padding: 3.75rem 1.875rem;
 }
 
-
+.etichetta{
+    max-width: 500px;
+    margin: auto;
+}
 
 
 
@@ -137,6 +140,24 @@ header{
 /* about */
 #about .container{
     display: block;
+}
+
+
+/* start  */
+#start{
+    background-color: var(--secondary-color);
+    text-align: center;
+}
+
+/* foote  */
+footer{
+    background-color: #333333;
+    color: white;
+    text-align: center;
+}
+
+footer p{
+    padding: 15px 0;
 }
 
 /* DESKTOP */

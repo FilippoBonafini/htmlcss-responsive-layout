@@ -13,6 +13,9 @@
     --secondary-color: #9792e4;
 }
 
+img{
+    display: block;
+}
 
 
 
@@ -22,6 +25,7 @@
 .inline-list{
     display: flex;
     list-style: none;
+    gap: 1.25rem;
 }
 .flex{
     display: flex;
@@ -51,7 +55,13 @@ section,footer{
     margin: auto;
 }
 
+.text-whyte{
+    color: white;
+}
 
+.text-purple{
+    color: var(--secondary-color);
+}
 
 
 /* header  */
@@ -59,8 +69,12 @@ header{
     background-color: var(--first-color);
 }
 
+header .menu{
+    align-items: center;
+}
+
 .debug .logo{
-    height: 50px;
+    padding: 10px 0;
 }
 
 

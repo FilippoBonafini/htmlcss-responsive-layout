@@ -51,6 +51,9 @@ header{
     background-color: var(--first-color);
 }
 
+.debug .logo{
+    height: 50px;
+}
 
 /* MAIN  */
 .col{
@@ -59,35 +62,70 @@ header{
     background-color: var(--first-color-light);
 }
 
+/* debug sezione application */
 .debug .col{
     height: 18.75rem;
 }
 
+#planning{
+    background-color: var(--secondary-color);
+}
 
+
+#planning h2{
+    margin: 2rem 0 1rem 0;
+}
+#planning .col{
+    margin-top: 35px;
+    background-color: white;
+    border-radius: 40px;
+}
+#planning .img{
+    width: 100%;
+
+}
+/* debug sezione planning */
+.debug .img{
+    border: 1px solid black;
+    height: 12.5rem;
+}
 
 
 
 /* DESKTOP */
 @media screen and (min-width: 992px) {
+    /* common */
+    .max-width{
+        max-width: 71.25rem;
+        margin: auto;
+    }
+    /* header */
     .main-nav{
         display: block;
     }
     .hamburger{
         display: none;
     }
-    .col{
+
+    /* sezione application */
+    #application .col{
         width: calc( 100% / 3 - 1.875rem);
     }
-    .col:first-child{
+    #application .col:first-child{
         width: calc(2*(100% / 3) - 1.875rem);
     }
-    .max-width{
-        max-width: 71.25rem;
+
+    /* sezione planning */
+    #planning .row{
+        max-width: 56.25rem;
         margin: auto;
+        align-items: flex-end;
     }
+    #planning .flex-item{
+        width: calc(50% - 1.875rem);
+    }
+
 }
-
-
 
 
 

@@ -1,0 +1,97 @@
+/* reset  */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* dichiarazione variabili */
+:root {
+    --first-color: #0084fd;
+    --first-color-light: #b5ddff;
+    --secondary-color: #9792e4;
+}
+
+
+
+
+/* common */
+
+
+.inline-list{
+    display: flex;
+    list-style: none;
+}
+.flex{
+    display: flex;
+}
+.justify-content-between{
+    justify-content: space-between;
+}
+.regular{
+    width: 100%;
+}
+.mobile-hidden{
+    display: none;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.875rem;
+}
+
+section{
+    padding: 3.75rem 1.875rem;
+}
+
+/* header  */
+header{
+    background-color: var(--first-color);
+}
+
+
+/* MAIN  */
+.col{
+    width: 100%;
+    border-radius: 1.25rem;
+    background-color: var(--first-color-light);
+}
+
+.debug .col{
+    height: 18.75rem;
+}
+
+
+
+
+
+/* DESKTOP */
+@media screen and (min-width: 992px) {
+    .main-nav{
+        display: block;
+    }
+    .hamburger{
+        display: none;
+    }
+    .col{
+        width: calc( 100% / 3 - 1.875rem);
+    }
+    .col:first-child{
+        width: calc(2*(100% / 3) - 1.875rem);
+    }
+    .max-width{
+        max-width: 71.25rem;
+        margin: auto;
+    }
+}
+
+
+
+
+
+/* da 0 a 768 è mobile
+da 768 a 992 è tablet
+da 992 in poi desktop */
+
